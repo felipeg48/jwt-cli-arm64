@@ -16,7 +16,7 @@ jobs:
     - name: Checkout code from other repository
       uses: actions/checkout@v4
       with:
-        repository: https://github.com/mike-engel/jwt-cli
+        repository: mike-engel/jwt-cli
         ref: main
     - uses: actions-rs/toolchain@v1
       with:
