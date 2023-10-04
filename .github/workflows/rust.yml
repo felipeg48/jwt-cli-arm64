@@ -28,7 +28,8 @@ jobs:
         use-cross: true
         command: build
         args: --release --target aarch64-unknown-linux-gnu
-    - name: Directory
-      run: ls -lrt target/aarch64-unknown-linux-gnu/
-    - name: Find
-      run: find target/ -name jwt
+    - name: Upload release asset
+      uses: actions/upload-release-asset@v5
+      with:
+        name: jwt-cli-arm64
+        path: target/aarch64-unknown-linux-gnu/release/jwt
