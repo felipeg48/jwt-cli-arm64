@@ -33,4 +33,5 @@ jobs:
       with:
         name: jwt-cli-arm64
         tag_name: 6.0.0
+        token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
         files: target/aarch64-unknown-linux-gnu/release/jwt
